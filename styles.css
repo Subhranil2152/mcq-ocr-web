@@ -1,0 +1,112 @@
+/* Reset default margin and padding */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+/* Set background image for the login page */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('login.jpg'); /* Replace 'background.jpg' with your image path */
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Style for the container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px; /* Adjust width as needed */
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for container */
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the password container */
+.password-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px; /* Add margin between password field and button */
+}
+
+/* Style for the password input field */
+#username, #password {
+  width: calc(100% - 32px); /* Adjust width as needed */
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Style for the "Show Password" button */
+#showPasswordBtn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  padding: 6px 16px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Additional styles for the container */
+.container h1 {
+  margin-bottom: 20px;
+}
+
+.container button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style for the logout button */
+.logout-btn, .back-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  border: none;
+  background-color: #f44336;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-btn {
+  left: 20px;
+  right: auto;
+}
+/* Existing CSS styles */
+
+#idleGifContainer {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  z-index: 9999; /* Ensure it appears on top */
+}
+
+#idleGifContainer iframe {
+  width: 100%;
+  height: 100%;
+}
